@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "io.github.mobdev"
+    namespace = "ru.klapneva.mobdev.lab1"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "io.github.mobdev"
+        applicationId = "ru.klapneva.mobdev.lab1"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
