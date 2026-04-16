@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Contacts</string>
+    <string name="search_contacts">Search contacts…</string>
+    <string name="permission_denied">Contacts permission denied.\nYou can enable it in:\nSettings > Apps > My Contacts > Permissions > Contacts</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="edit_contact">Edit Contact</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="delete_confirmation">Are you sure you want to delete %1$s?</string>
+    <string name="confirm_delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Save</string>
+    <string name="close">Close</string>
+    <string name="field_name">Name</string>
+    <string name="field_phone">Phone Number</string>
+    <string name="field_email">Email</string>
+    <string name="no_phone">No phone number</string>
+    <string name="no_email">No email address</string>
+    <string name="unknown_name">Unknown</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="no_results">No matching contacts found\n</string>
+    <string name="no_contacts">No contacts saved yet</string>
+    <string name="contact_deleted">%s deleted</string>
+    <string name="undo">UNDO</string>
+</resources>
+
