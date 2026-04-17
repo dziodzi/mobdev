@@ -1,0 +1,24 @@
+<resources>
+    <string name="ui_contacts_title">Каталог контактов</string>
+    <string name="ui_contacts_subtitle">Всего контактов: %1$d</string>
+    <string name="ui_permission_badge">Доступ к контактам</string>
+    <string name="ui_permission_title">Открой доступ к контактам</string>
+    <string name="ui_permission_description">Приложение покажет красивый каталог контактов, поиск по имени и телефону, а также карточки с подробной информацией.</string>
+    <string name="ui_grant_permission">Разрешить доступ</string>
+    <string name="ui_permission_denied_badge">Доступ запрещен</string>
+    <string name="ui_permission_denied_title">Доступ к контактам запрещен</string>
+    <string name="ui_permission_denied_description">Разрешение было отключено. Открой настройки приложения и включи доступ к контактам вручную.</string>
+    <string name="ui_open_settings">Открыть настройки</string>
+    <string name="ui_search_label">Поиск</string>
+    <string name="ui_search_placeholder">Имя или номер телефона</string>
+    <string name="ui_search_empty_title">Ничего не найдено</string>
+    <string name="ui_search_empty_description">Попробуй изменить запрос и поискать по другому имени или номеру.</string>
+    <string name="ui_no_contacts">Контакты не найдены</string>
+    <string name="ui_no_contacts_description">Пока список пуст. Добавь контакт в системное приложение и вернись обратно, список обновится при возврате на экран.</string>
+    <string name="ui_phone_number">Телефон</string>
+    <string name="ui_email">Email</string>
+    <string name="ui_no_data">Нет данных</string>
+    <string name="ui_close">Закрыть</string>
+    <string name="ui_more_label">Открыть</string>
+    <string name="ui_permission_symbol">*</string>
+</resources>
