@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">calculator</string>
+    <string name="app_name">Контакты</string>
+    <string name="screen_title">Контакты</string>
+    <string name="no_permission_title">Нет доступа к контактам</string>
+    <string name="no_permission_body">Чтобы показать список, разрешите чтение контактов для этого приложения.</string>
+    <string name="request_permission">Разрешить доступ</string>
+    <string name="empty_list">Контакты не найдены</string>
+    <string name="phone_label">Телефон</string>
+    <string name="email_label">Электронная почта</string>
+    <string name="not_specified">Не указано</string>
+    <string name="unknown_contact">Без имени</string>
+    <string name="list_row_chevron">›</string>
+    <string name="back_symbol">‹</string>
+    <string name="back_content_description">Назад</string>
 </resources>
