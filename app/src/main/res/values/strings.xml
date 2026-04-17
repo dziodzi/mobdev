@@ -1,3 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">mobdev</string>
+    <string name="app_name">Lab2 Contacts</string>
+    <string name="contacts_screen_title">Контакты</string>
+    <string name="details_screen_title">Детали контакта</string>
+    <string name="permission_required_title">Нет доступа к контактам</string>
+    <string name="permission_required_description">Для отображения списка необходимо предоставить разрешение.</string>
+    <string name="request_permission">Запросить разрешение</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="no_contacts">Контактов не найдено</string>
+    <string name="contact_name">Имя: %1$s</string>
+    <string name="contact_phone">Телефон: %1$s</string>
+    <string name="contact_email">Email: %1$s</string>
+    <string name="unknown_value">Не указано</string>
+    <string name="details">Подробнее</string>
+    <string name="back">Назад</string>
 </resources>
