@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">mobdev</string>
+    <string name="app_name">Кектанты</string>
+    <string name="title_contacts">Контакты</string>
+    <string name="no_contacts">Контактов не найдено</string>
+    <string name="no_name">Без имени</string>
+    <string name="label_phone">Телефон</string>
+    <string name="label_email">Email</string>
+    <string name="not_specified">Не указано</string>
+    <string name="permission_rationale">Для показа контактов нужно разрешение</string>
+    <string name="permission_grant">Предоставить разрешение</string>
+    <string name="permission_denied">Доступ к контактам не предоставлен</string>
+    <string name="permission_request_again">Запросить ещё раз</string>
+    <string name="permission_denied_permanently">Доступ к контактам отклонён. Откройте настройки приложения, чтобы предоставить доступ.</string>
+    <string name="permission_open_settings">Открыть настройки</string>
 </resources>
