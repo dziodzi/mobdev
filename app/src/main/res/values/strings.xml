@@ -1,3 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">mobdev</string>
+    <string name="app_name">Чат</string>
+
+
+    <string name="login_title">Вход в чат</string>
+    <string name="login_hint">Логин</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="register_button">Зарегистрироваться</string>
+    <string name="loading">Загрузка...</string>
+
+
+    <string name="error_title">Ошибка</string>
+    <string name="error_empty_login">Введите логин</string>
+    <string name="error_empty_password">Введите пароль</string>
+    <string name="error_empty_login_password">Введите логин и пароль</string>
+    <string name="error_invalid_credentials">Неверный логин или пароль</string>
+    <string name="error_registration_failed">Ошибка регистрации</string>
+    <string name="error_empty_response">Пустой ответ от сервера</string>
+    <string name="error_network">Ошибка сети</string>
+    <string name="error_loading_chats">Ошибка загрузки чатов</string>
+    <string name="error_loading_messages">Ошибка загрузки сообщений</string>
+    <string name="error_send_failed">Ошибка отправки</string>
+    <string name="ok">OK</string>
+
+
+    <string name="chats_title">Чаты</string>
+    <string name="logout_button">Выйти</string>
+
+
+    <string name="back_button">Назад</string>
+    <string name="load_more">Загрузить ещё</string>
+    <string name="message_hint">Сообщение...</string>
+    <string name="send_button">Отправить</string>
+    <string name="select_chat_hint">Выберите чат</string>
+
+
+    <string name="registered_success">Зарегистрирован! Пароль: %s</string>
+    <string name="user_exists">Пользователь уже существует</string>
+
+
+    <string name="close">Закрыть</string>
+    <string name="image_description">Изображение</string>
 </resources>
