@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="calc_display_bg">#FF2C2C2E</color>
+    <color name="calc_display_border">#FF48484A</color>
+</resources>
