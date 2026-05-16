@@ -1,0 +1,29 @@
+R_DEF: Internal format may change without notice
+local
+id btn0
+id btn1
+id btn2
+id btn3
+id btn4
+id btn5
+id btn6
+id btn7
+id btn8
+id btn9
+id btnClear
+id btnDiv
+id btnDot
+id btnEquals
+id btnMinus
+id btnMul
+id btnPercent
+id btnPlus
+id btnPlusMinus
+id tvDisplay
+layout activity_main
+string app_name
+style CalcBtn
+style CalcBtn.Dark
+style CalcBtn.Gray
+style CalcBtn.Orange
+style Theme.Calculator
