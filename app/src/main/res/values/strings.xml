@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">mobdev</string>
+    <string name="app_name">kekchat</string>
+    <string name="login_title">Вход</string>
+    <string name="login_username">Имя пользователя</string>
+    <string name="login_password">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="login_error">Неверный логин или пароль</string>
+    <string name="login_network_error">Ошибка сети, попробуйте ещё раз</string>
+    <string name="error_dialog_title">Ошибка</string>
+    <string name="ok">OK</string>
+    <string name="channels_title">Каналы</string>
+    <string name="logout">Выйти</string>
+    <string name="select_chat">Выберите чат</string>
+    <string name="message_hint">Сообщение</string>
+    <string name="send">Отправить</string>
+    <string name="back">Назад</string>
+    <string name="load_more">Загрузить ещё</string>
+    <string name="no_messages">Сообщений пока нет</string>
+    <string name="image_full">Изображение</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
