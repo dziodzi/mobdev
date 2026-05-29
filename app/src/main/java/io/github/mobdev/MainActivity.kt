@@ -76,7 +76,6 @@ fun ContactsApp() {
                 .padding(paddingValues)
         ) {
             when {
-                // Загрузка
                 isLoading -> {
                     Column(
                         modifier = Modifier.fillMaxSize(),
