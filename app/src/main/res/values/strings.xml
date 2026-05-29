@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">mobdev</string>
+    <string name="app_name">Контакты</string>
+    <string name="contacts_title">Список контактов</string>
+    <string name="permission_required">Нет доступа к контактам</string>
+    <string name="permission_hint">Разрешите чтение контактов, чтобы увидеть список</string>
+    <string name="grant_permission">Выдать разрешение</string>
+    <string name="no_contacts">Контактов не найдено</string>
+    <string name="contact_details">Контакт</string>
+    <string name="label_name">Имя</string>
+    <string name="label_phone">Телефон</string>
+    <string name="label_email">Email</string>
+    <string name="value_missing">—</string>
+    <string name="reload">Обновить</string>
 </resources>
