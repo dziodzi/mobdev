@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">mobdev</string>
+    <string name="app_name">Контакты</string>
+
+    <string name="loading_contacts">Загрузка контактов...</string>
+
+    <string name="permission_required">Для отображения контактов необходимо разрешение</string>
+    <string name="permission_read_contacts">Разрешение на чтение контактов</string>
+    <string name="permission_grant_button">Предоставить разрешение</string>
+    <string name="permission_denied_message">Разрешение было отклонено. Нажмите кнопку выше, чтобы запросить снова</string>
+
+    <string name="total_contacts">Всего контактов: %d</string>
+
+    <string name="contact_info_title">Информация о контакте</string>
+    <string name="contact_name">Имя: %s</string>
+    <string name="contact_phone">Телефон: %s</string>
+    <string name="contact_email">Email: %s</string>
+    <string name="contact_birthday">День рождения: %s</string>
+    <string name="contact_note">Заметки: %s</string>
+    <string name="contact_not_specified">Не указан</string>
+    <string name="dialog_close">Закрыть</string>
 </resources>
