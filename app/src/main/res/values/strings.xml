@@ -1,3 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">mobdev</string>
+    <string name="app_name">Чат</string>
+
+    <string name="title_chats">Чаты</string>
+    <string name="title_image">Картинка</string>
+    <string name="select_chat">Выберите чат</string>
+
+    <string name="login_title">Вход</string>
+    <string name="login_name">Логин</string>
+    <string name="login_pwd">Пароль</string>
+    <string name="login_submit">Войти</string>
+
+    <string name="error_title">Ошибка</string>
+    <string name="error_bad_credentials">Неверный логин или пароль</string>
+    <string name="error_session_expired">Сессия истекла, войдите снова</string>
+    <string name="error_network">Нет подключения к интернету. Включите сеть и попробуйте снова.</string>
+
+    <string name="action_ok">OK</string>
+    <string name="action_back">Назад</string>
+    <string name="action_close">Закрыть</string>
+    <string name="action_logout">Выйти</string>
+
+    <string name="chats_empty">Каналов пока нет</string>
+    <string name="messages_empty">В этом чате ещё нет сообщений</string>
+    <string name="messages_input_hint">Сообщение</string>
+    <string name="messages_send">Отправить</string>
+    <string name="messages_attach">Прикрепить картинку</string>
+    <string name="messages_image_cd">Изображение в сообщении</string>
+    <string name="messages_unknown">Неизвестный тип сообщения</string>
+    <string name="image_cd">Полноразмерная картинка</string>
+    <string name="offline_banner">Нет сети — сообщения сохранятся и отправятся, когда сеть появится</string>
+    <string name="messages_empty_offline">Нет сети, а сохранённых сообщений этого чата ещё нет. Можно написать — отправится позже.</string>
+    <string name="messages_not_sent">Не отправлено</string>
 </resources>
