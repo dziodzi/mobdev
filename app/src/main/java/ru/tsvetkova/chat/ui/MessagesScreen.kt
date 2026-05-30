@@ -1,5 +1,9 @@
 package ru.tsvetkova.chat.ui
 
+import android.net.Uri
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.PickVisualMediaRequest
+import androidx.activity.result.contract.ActivityResultContracts.PickVisualMedia
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -20,6 +24,8 @@ import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Send
+import androidx.compose.material.icons.filled.AttachFile
+import androidx.compose.material.icons.filled.Schedule
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -52,14 +58,24 @@ fun MessagesScreen(
     channel: String,
     currentUser: String?,
     messages: List<Message>,
+    pending: List<PendingText>,
     loading: Boolean,
     sending: Boolean,
+    online: Boolean,
     onSend: (String) -> Unit,
+    onSendPicture: (Uri, String) -> Unit,
     onOpenImage: (String) -> Unit,
     onLoadOlder: () -> Unit,
 ) {
     var draft by remember { mutableStateOf("") }
     val listState = rememberLazyListState()
+
+    val pickImageLauncher = rememberLauncherForActivityResult(PickVisualMedia()) { uri ->
+        if (uri != null) {
+            onSendPicture(uri, draft)
+            draft = ""
+        }
+    }
 
     LaunchedEffect(channel) {
         snapshotFlow { listState.firstVisibleItemIndex }
@@ -68,19 +84,37 @@ fun MessagesScreen(
             .collect { onLoadOlder() }
     }
 
-    LaunchedEffect(messages.lastOrNull()?.id) {
-        if (messages.isNotEmpty()) {
-            listState.animateScrollToItem(messages.lastIndex)
+    LaunchedEffect(messages.size, pending.size) {
+        val total = messages.size + pending.size
+        if (total > 0) {
+            listState.animateScrollToItem(total)
         }
     }
 
     Column(modifier = Modifier.fillMaxSize().padding(padding)) {
-        Box(modifier = Modifier.weight(1f).fillMaxWidth()) {
-            if (messages.isEmpty() && loading) {
-                CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
-            } else if (messages.isEmpty()) {
+        if (!online) {
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(MaterialTheme.colorScheme.errorContainer)
+                    .padding(vertical = 6.dp),
+                contentAlignment = Alignment.Center,
+            ) {
                 Text(
-                    text = stringResource(R.string.messages_empty),
+                    text = stringResource(R.string.offline_banner),
+                    color = MaterialTheme.colorScheme.onErrorContainer,
+                )
+            }
+        }
+        Box(modifier = Modifier.weight(1f).fillMaxWidth()) {
+            val hasContent = messages.isNotEmpty() || pending.isNotEmpty()
+            if (!hasContent && loading) {
+                CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
+            } else if (!hasContent) {
+                Text(
+                    text = stringResource(
+                        if (online) R.string.messages_empty else R.string.messages_empty_offline
+                    ),
                     modifier = Modifier.align(Alignment.Center),
                 )
             } else {
@@ -102,12 +136,15 @@ fun MessagesScreen(
                             }
                         }
                     }
-                    items(messages, key = { it.id ?: it.hashCode().toString() }) { msg ->
+                    items(messages, key = { it.id ?: it.hashCode().toLong() }) { msg ->
                         MessageBubble(
                             message = msg,
                             isMine = msg.from == currentUser,
                             onOpenImage = onOpenImage,
                         )
+                    }
+                    items(pending, key = { "pending_${it.localId}" }) { item ->
+                        PendingBubble(item)
                     }
                 }
             }
@@ -119,6 +156,19 @@ fun MessagesScreen(
                 .padding(8.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
+            IconButton(
+                onClick = {
+                    pickImageLauncher.launch(
+                        PickVisualMediaRequest(PickVisualMedia.ImageOnly)
+                    )
+                },
+                enabled = !sending && online,
+            ) {
+                Icon(
+                    Icons.Default.AttachFile,
+                    contentDescription = stringResource(R.string.messages_attach),
+                )
+            }
             OutlinedTextField(
                 value = draft,
                 onValueChange = { draft = it },
@@ -155,6 +205,47 @@ fun MessagesScreen(
 }
 
 @Composable
+private fun PendingBubble(message: PendingText) {
+    Column(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalAlignment = Alignment.End,
+    ) {
+        Text(
+            text = message.from,
+            fontWeight = FontWeight.SemiBold,
+            modifier = Modifier.padding(horizontal = 6.dp),
+        )
+        Spacer(Modifier.height(2.dp))
+        Box(
+            modifier = Modifier
+                .clip(RoundedCornerShape(12.dp))
+                .background(MaterialTheme.colorScheme.surfaceVariant)
+                .padding(10.dp),
+        ) {
+            Text(text = message.text)
+        }
+        Spacer(Modifier.height(2.dp))
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.padding(horizontal = 6.dp),
+        ) {
+            Icon(
+                Icons.Default.Schedule,
+                contentDescription = null,
+                modifier = Modifier.size(14.dp),
+                tint = MaterialTheme.colorScheme.outline,
+            )
+            Spacer(Modifier.width(4.dp))
+            Text(
+                text = stringResource(R.string.messages_not_sent),
+                style = MaterialTheme.typography.labelSmall,
+                color = MaterialTheme.colorScheme.outline,
+            )
+        }
+    }
+}
+
+@Composable
 private fun MessageBubble(message: Message, isMine: Boolean, onOpenImage: (String) -> Unit) {
     val bg = if (isMine) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant
     val alignment = if (isMine) Alignment.End else Alignment.Start
@@ -175,8 +266,8 @@ private fun MessageBubble(message: Message, isMine: Boolean, onOpenImage: (Strin
                 .background(bg)
                 .padding(10.dp),
         ) {
-            val image = message.data.image?.link
-            val text = message.data.text?.text
+            val image = message.data?.image?.link
+            val text = message.data?.text?.text
             when {
                 image != null -> {
                     AsyncImage(

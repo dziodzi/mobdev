@@ -91,6 +91,7 @@ fun LoginScreen(
     if (error != null) {
         val message = when (error) {
             "session_expired" -> stringResource(R.string.error_session_expired)
+            "network" -> stringResource(R.string.error_network)
             else -> stringResource(R.string.error_bad_credentials)
         }
         AlertDialog(

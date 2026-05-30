@@ -14,6 +14,7 @@
     <string name="error_title">Ошибка</string>
     <string name="error_bad_credentials">Неверный логин или пароль</string>
     <string name="error_session_expired">Сессия истекла, войдите снова</string>
+    <string name="error_network">Нет подключения к интернету. Включите сеть и попробуйте снова.</string>
 
     <string name="action_ok">OK</string>
     <string name="action_back">Назад</string>
@@ -24,7 +25,11 @@
     <string name="messages_empty">В этом чате ещё нет сообщений</string>
     <string name="messages_input_hint">Сообщение</string>
     <string name="messages_send">Отправить</string>
+    <string name="messages_attach">Прикрепить картинку</string>
     <string name="messages_image_cd">Изображение в сообщении</string>
     <string name="messages_unknown">Неизвестный тип сообщения</string>
     <string name="image_cd">Полноразмерная картинка</string>
+    <string name="offline_banner">Нет сети — сообщения сохранятся и отправятся, когда сеть появится</string>
+    <string name="messages_empty_offline">Нет сети, а сохранённых сообщений этого чата ещё нет. Можно написать — отправится позже.</string>
+    <string name="messages_not_sent">Не отправлено</string>
 </resources>

@@ -23,9 +23,9 @@ data class MessageData(
 
 @Serializable
 data class Message(
-    val id: String? = null,
+    val id: Long? = null,
     val from: String,
     val to: String? = null,
-    val data: MessageData,
-    val time: String? = null,
+    val data: MessageData? = null,
+    val time: Long? = null,
 )
