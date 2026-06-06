@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">mobdev</string>
+    <string name="app_name">Чат</string>
+    <string name="login_username">Логин</string>
+    <string name="login_password">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="chats_title">Чаты</string>
+    <string name="no_channels">Каналов нет</string>
+    <string name="logout_button">Выйти</string>
+    <string name="select_chat">Выберите чат</string>
+    <string name="back_to_chats">К чатам</string>
+    <string name="message_hint">Сообщение</string>
+    <string name="send_button">Отправить</string>
+    <string name="close_image">Закрыть</string>
+    <string name="image_content_description">Изображение</string>
+    <string name="ok">OK</string>
+    <string name="error_invalid_credentials">Неверный логин / пароль</string>
+    <string name="error_session_expired">Сессия истекла, войдите снова</string>
+    <string name="error_network">Ошибка сети</string>
+    <string name="offline_banner">Нет сети — показаны сохранённые данные</string>
+    <string name="message_pending">Отправится при появлении сети</string>
 </resources>
