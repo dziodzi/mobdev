@@ -1,3 +1,44 @@
 <resources>
-    <string name="app_name">mobdev</string>
+    <string name="app_name">Chat</string>
+
+    <string name="login_title">Добро пожаловать</string>
+    <string name="login_subtitle">Войдите, чтобы открыть каналы и сообщения</string>
+    <string name="login_hint">Логин</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_button">Войти</string>
+
+    <string name="error_title">Ошибка</string>
+    <string name="empty_login_password">Введите логин и пароль</string>
+    <string name="wrong_login_password">Неверный логин или пароль</string>
+    <string name="login_network_error">Не удалось подключиться к серверу. Проверьте интернет и попробуйте ещё раз</string>
+    <string name="ok">OK</string>
+
+    <string name="logged_in_as">Вы вошли как %1$s</string>
+    <string name="chats_title">Чаты</string>
+    <string name="channels_title">Каналы</string>
+    <string name="channel_subtitle">Канал</string>
+    <string name="loading_last_message">Загрузка...</string>
+    <string name="no_messages_short">Нет сообщений</string>
+    <string name="photo_message_preview">Фото</string>
+    <string name="last_message_preview">%1$s: %2$s</string>
+    <string name="select_chat">Выберите чат</string>
+    <string name="back_to_chats">Назад к чатам</string>
+    <string name="refresh">Обновить</string>
+    <string name="logout">Выйти</string>
+    <string name="message_hint">Сообщение</string>
+    <string name="send">Отправить</string>
+    <string name="no_channels">Каналы пока не найдены</string>
+    <string name="no_messages">В этом канале пока нет сообщений</string>
+    <string name="channels_load_error">Не удалось загрузить список каналов</string>
+    <string name="messages_load_error">Не удалось загрузить сообщения</string>
+    <string name="message_send_error">Не удалось отправить сообщение</string>
+    <string name="offline_send_blocked">Нет сети. Сообщение можно отправить после подключения</string>
+    <string name="unsupported_message">Неподдерживаемое сообщение</string>
+    <string name="image_message">Изображение: %1$s</string>
+    <string name="image_fullscreen">Изображение</string>
+    <string name="close_image">Закрыть</string>
+    <string name="message_author">%1$s - %2$s</string>
+
+    <string name="chats_stub_title">Вход выполнен</string>
+    <string name="chats_stub_subtitle">Экран чата добавлен в проект</string>
 </resources>
