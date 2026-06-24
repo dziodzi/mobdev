@@ -1,4 +1,4 @@
-package io.github.mobdev
+package com.example.calculator
 
 import org.junit.Test
 
