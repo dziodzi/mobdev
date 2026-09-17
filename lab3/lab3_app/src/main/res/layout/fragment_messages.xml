@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/canvas" android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/messages_toolbar"
+        style="@style/ChatToolbar" android:layout_width="match_parent" android:layout_height="72dp"
+        app:subtitle="@string/channel_type"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/load_older_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent" android:layout_height="48dp"
+        android:text="@string/load_older" android:textAllCaps="false" android:textSize="12sp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/messages_refresh"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/messages_list"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:clipToPadding="false" android:paddingTop="8dp" android:paddingBottom="16dp"
+                android:fadeScrollbars="false" android:overScrollMode="ifContentScrolls"
+                android:scrollbarStyle="outsideInset" android:scrollbars="vertical"
+                app:fastScrollEnabled="true"
+                app:fastScrollHorizontalThumbDrawable="@drawable/scrollbar_thumb_horizontal"
+                app:fastScrollHorizontalTrackDrawable="@drawable/scrollbar_track_horizontal"
+                app:fastScrollVerticalThumbDrawable="@drawable/scrollbar_thumb_vertical"
+                app:fastScrollVerticalTrackDrawable="@drawable/scrollbar_track_vertical"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <TextView android:id="@+id/messages_empty" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center"
+            android:padding="24dp" android:text="@string/empty_messages"
+            android:textColor="@color/muted" android:visibility="gone"/>
+    </FrameLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="bottom" android:orientation="horizontal" android:padding="12dp"
+        android:background="@color/surface">
+        <EditText android:id="@+id/message_input" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1" android:minHeight="48dp"
+            android:padding="12dp" android:background="@drawable/bg_composer"
+            android:hint="@string/message_hint" android:textSize="16sp"
+            android:textColor="@color/ink" android:textColorHint="@color/muted"
+            android:imeOptions="flagNoExtractUi" android:inputType="textCapSentences|textMultiLine"
+            android:importantForAutofill="no" android:maxLines="4" android:gravity="top|start"
+            android:saveEnabled="false"/>
+        <FrameLayout android:layout_width="48dp" android:layout_height="48dp" android:layout_marginStart="8dp">
+            <com.google.android.material.button.MaterialButton android:id="@+id/send_button"
+                style="@style/ChatIconButton" android:layout_width="48dp" android:layout_height="48dp"
+                android:contentDescription="@string/send_action"
+                app:icon="@drawable/ic_send" app:iconTint="@color/surface" app:backgroundTint="@color/primary"/>
+            <ProgressBar android:id="@+id/send_progress" android:layout_width="24dp"
+                android:layout_height="24dp" android:layout_gravity="center" android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
