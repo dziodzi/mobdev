@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#087F72</color>
+    <color name="primary">#087F72</color>
+    <color name="primary_dark">#FFFFFF</color>
+    <color name="accent">#087F72</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="canvas">#F3F5F7</color>
+    <color name="ink">#20272E</color>
+    <color name="muted">#626D78</color>
+    <color name="selected_chat">#DDF2ED</color>
+    <color name="message_own">#DDF2ED</color>
+    <color name="message_other">#FFFFFF</color>
+    <color name="divider">#E0E5E9</color>
+    <color name="avatar">#FCEAC4</color>
+    <color name="avatar_ink">#785515</color>
+</resources>

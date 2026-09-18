@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мобильный чат</string>
+    <string name="login_title">Вход в чат</string>
+    <string name="login_hint">Имя пользователя</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_action">Войти</string>
+    <string name="login_error">Неверный логин или пароль</string>
+    <string name="network_error">Не удалось связаться с сервером</string>
+    <string name="server_error">Ошибка сервера</string>
+    <string name="channels_title">Чаты</string>
+    <string name="logout_action">Выйти</string>
+    <string name="choose_chat">Выберите чат</string>
+    <string name="back_action">Назад</string>
+    <string name="message_hint">Сообщение</string>
+    <string name="send_action">Отправить</string>
+    <string name="empty_channels">Нет доступных каналов</string>
+    <string name="empty_messages">В этом чате пока нет сообщений</string>
+    <string name="load_older">Загрузить предыдущие сообщения</string>
+    <string name="close_image">Закрыть изображение</string>
+    <string name="image_message">Изображение</string>
+    <string name="message_author_format">%1$s · %2$s</string>
+    <string name="channel_type">Общий канал</string>
+    <string name="selected_channel">Выбранный канал</string>
+    <string name="refresh_action">Обновить</string>
+    <string name="retry_image">Повторить загрузку</string>
+    <string name="required_field">Заполните поле</string>
+    <string name="session_expired">Сессия завершена. Войдите снова.</string>
+    <string name="you">Вы</string>
+    <string name="image_failed">Изображение не загрузилось</string>
+    <string name="load_failed">Не удалось загрузить данные</string>
+    <string name="register_action">Создать аккаунт</string>
+    <string name="browser_unavailable">Не удалось открыть браузер</string>
+</resources>

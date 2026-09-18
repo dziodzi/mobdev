@@ -1,0 +1,1 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/selected_chat"><item><selector><item android:state_selected="true" android:drawable="@color/selected_chat"/><item android:drawable="@color/surface"/></selector></item></ripple>

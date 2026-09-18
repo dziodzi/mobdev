@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/surface" android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/channels_toolbar" style="@style/ChatToolbar"
+        android:layout_width="match_parent" android:layout_height="72dp" app:title="@string/channels_title"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/channels_refresh"
+            android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/channels_list"
+                android:layout_width="match_parent" android:layout_height="match_parent"
+                android:clipToPadding="false" android:paddingTop="8dp" android:paddingBottom="16dp"
+                android:fadeScrollbars="false" android:overScrollMode="ifContentScrolls"
+                android:scrollbarStyle="outsideInset" android:scrollbars="vertical"
+                app:fastScrollEnabled="true"
+                app:fastScrollHorizontalThumbDrawable="@drawable/scrollbar_thumb_horizontal"
+                app:fastScrollHorizontalTrackDrawable="@drawable/scrollbar_track_horizontal"
+                app:fastScrollVerticalThumbDrawable="@drawable/scrollbar_thumb_vertical"
+                app:fastScrollVerticalTrackDrawable="@drawable/scrollbar_track_vertical"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <TextView android:id="@+id/channels_empty" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center"
+            android:gravity="center" android:padding="24dp" android:text="@string/empty_channels"
+            android:textColor="@color/muted" android:visibility="gone"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <color name="primary">#6DD5C1</color>
+    <color name="primary_dark">#202326</color>
+    <color name="accent">#6DD5C1</color>
+    <color name="surface">#202326</color>
+    <color name="canvas">#16181B</color>
+    <color name="ink">#F1F3F4</color>
+    <color name="muted">#AAB1B7</color>
+    <color name="selected_chat">#254B45</color>
+    <color name="message_own">#254B45</color>
+    <color name="message_other">#2B3035</color>
+    <color name="divider">#373E44</color>
+    <color name="avatar">#4A3D26</color>
+    <color name="avatar_ink">#EDD099</color>
+</resources>
