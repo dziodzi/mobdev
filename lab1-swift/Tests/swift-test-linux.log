@@ -1,0 +1,124 @@
+[0/1] Planning build
+Building for debugging...
+[0/4] Write sources
+[1/4] Write swift-version--3CC22946DAC5B331.txt
+[3/7] Emitting module CalculatorCoreTests
+[4/7] Compiling CalculatorCoreTests CalculatorCoreTests.swift
+[5/8] /home/ubuntu/advanced-calculator/.build/x86_64-unknown-linux-gnu/debug/CalculatorCorePackageDiscoveredTests.derived/all-discovered-tests.swift
+[6/9] Write sources
+[8/12] Compiling CalculatorCorePackageDiscoveredTests all-discovered-tests.swift
+[9/12] Compiling CalculatorCorePackageDiscoveredTests CalculatorCoreTests.swift
+[10/12] Emitting module CalculatorCorePackageDiscoveredTests
+[11/13] Write Objects.LinkFileList
+[12/13] Linking CalculatorCorePackageTests.xctest
+Build complete! (2.65s)
+Test Suite 'All tests' started at 2026-09-24 09:51:41.334
+Test Suite 'debug.xctest' started at 2026-09-24 09:51:41.336
+Test Suite 'CalculatorSessionTests' started at 2026-09-24 09:51:41.336
+Test Case 'CalculatorSessionTests.testBackspaceIsSafeAndClearsError' started at 2026-09-24 09:51:41.336
+Test Case 'CalculatorSessionTests.testBackspaceIsSafeAndClearsError' passed (0.002 seconds)
+Test Case 'CalculatorSessionTests.testClearDoesNotEraseMemoryOrHistory' started at 2026-09-24 09:51:41.338
+Test Case 'CalculatorSessionTests.testClearDoesNotEraseMemoryOrHistory' passed (0.101 seconds)
+Test Case 'CalculatorSessionTests.testClearHistoryDoesNotChangeInput' started at 2026-09-24 09:51:41.439
+Test Case 'CalculatorSessionTests.testClearHistoryDoesNotChangeInput' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testContinuationPreservesFullPrecision' started at 2026-09-24 09:51:41.439
+Test Case 'CalculatorSessionTests.testContinuationPreservesFullPrecision' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testEqualsUpdatesHistoryAndResult' started at 2026-09-24 09:51:41.439
+Test Case 'CalculatorSessionTests.testEqualsUpdatesHistoryAndResult' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testEveryChangeIsPersisted' started at 2026-09-24 09:51:41.439
+Test Case 'CalculatorSessionTests.testEveryChangeIsPersisted' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testFailureDoesNotPolluteHistory' started at 2026-09-24 09:51:41.440
+Test Case 'CalculatorSessionTests.testFailureDoesNotPolluteHistory' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testHistoryKeepsLatestTen' started at 2026-09-24 09:51:41.440
+Test Case 'CalculatorSessionTests.testHistoryKeepsLatestTen' passed (0.001 seconds)
+Test Case 'CalculatorSessionTests.testHistoryRecallIsEditable' started at 2026-09-24 09:51:41.440
+Test Case 'CalculatorSessionTests.testHistoryRecallIsEditable' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testInputAfterResultStartsNewExpression' started at 2026-09-24 09:51:41.441
+Test Case 'CalculatorSessionTests.testInputAfterResultStartsNewExpression' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testInvalidExpressionDoesNotChangeMemory' started at 2026-09-24 09:51:41.441
+Test Case 'CalculatorSessionTests.testInvalidExpressionDoesNotChangeMemory' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testLengthLimitDoesNotDestroyCurrentInput' started at 2026-09-24 09:51:41.441
+Test Case 'CalculatorSessionTests.testLengthLimitDoesNotDestroyCurrentInput' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testMemoryOperations' started at 2026-09-24 09:51:41.442
+Test Case 'CalculatorSessionTests.testMemoryOperations' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testMemoryOverflowIsHandled' started at 2026-09-24 09:51:41.442
+Test Case 'CalculatorSessionTests.testMemoryOverflowIsHandled' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testMemoryRecallPreservesFullPrecision' started at 2026-09-24 09:51:41.442
+Test Case 'CalculatorSessionTests.testMemoryRecallPreservesFullPrecision' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testMemoryUsesExactResult' started at 2026-09-24 09:51:41.442
+Test Case 'CalculatorSessionTests.testMemoryUsesExactResult' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testOperatorAfterResultContinuesCalculation' started at 2026-09-24 09:51:41.442
+Test Case 'CalculatorSessionTests.testOperatorAfterResultContinuesCalculation' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testRecallNegativeMemoryAfterOperator' started at 2026-09-24 09:51:41.442
+Test Case 'CalculatorSessionTests.testRecallNegativeMemoryAfterOperator' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testRecallZeroMemory' started at 2026-09-24 09:51:41.443
+Test Case 'CalculatorSessionTests.testRecallZeroMemory' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testResultContinuationIsRestored' started at 2026-09-24 09:51:41.443
+Test Case 'CalculatorSessionTests.testResultContinuationIsRestored' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testToggleAfterOperatorDoesNotCreateInvalidGroup' started at 2026-09-24 09:51:41.443
+Test Case 'CalculatorSessionTests.testToggleAfterOperatorDoesNotCreateInvalidGroup' passed (0.002 seconds)
+Test Case 'CalculatorSessionTests.testToggleEmptyInputTwice' started at 2026-09-24 09:51:41.445
+Test Case 'CalculatorSessionTests.testToggleEmptyInputTwice' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testToggleLastGroup' started at 2026-09-24 09:51:41.445
+Test Case 'CalculatorSessionTests.testToggleLastGroup' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testToggleLastNumber' started at 2026-09-24 09:51:41.446
+Test Case 'CalculatorSessionTests.testToggleLastNumber' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testToggleNegativeNumber' started at 2026-09-24 09:51:41.446
+Test Case 'CalculatorSessionTests.testToggleNegativeNumber' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testTogglePercentAndExponent' started at 2026-09-24 09:51:41.446
+Test Case 'CalculatorSessionTests.testTogglePercentAndExponent' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testToggleResult' started at 2026-09-24 09:51:41.447
+Test Case 'CalculatorSessionTests.testToggleResult' passed (0.0 seconds)
+Test Case 'CalculatorSessionTests.testUserDefaultsRoundTripAndCorruptData' started at 2026-09-24 09:51:41.447
+Test Case 'CalculatorSessionTests.testUserDefaultsRoundTripAndCorruptData' passed (0.002 seconds)
+Test Suite 'CalculatorSessionTests' passed at 2026-09-24 09:51:41.449
+Executed 28 tests, with 0 failures (0 unexpected) in 0.113 (0.113) seconds
+Test Suite 'ExpressionEvaluatorTests' started at 2026-09-24 09:51:41.449
+Test Case 'ExpressionEvaluatorTests.testConsecutiveOperators' started at 2026-09-24 09:51:41.449
+Test Case 'ExpressionEvaluatorTests.testConsecutiveOperators' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testDecimalFormats' started at 2026-09-24 09:51:41.450
+Test Case 'ExpressionEvaluatorTests.testDecimalFormats' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testDeterministicGeneratedExpressions' started at 2026-09-24 09:51:41.450
+Test Case 'ExpressionEvaluatorTests.testDeterministicGeneratedExpressions' passed (0.003 seconds)
+Test Case 'ExpressionEvaluatorTests.testDivisionByZero' started at 2026-09-24 09:51:41.453
+Test Case 'ExpressionEvaluatorTests.testDivisionByZero' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testEmptyExpression' started at 2026-09-24 09:51:41.454
+Test Case 'ExpressionEvaluatorTests.testEmptyExpression' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testExamplesFromAssignment' started at 2026-09-24 09:51:41.454
+Test Case 'ExpressionEvaluatorTests.testExamplesFromAssignment' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testInvalidCharacters' started at 2026-09-24 09:51:41.454
+Test Case 'ExpressionEvaluatorTests.testInvalidCharacters' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testInvalidNumbers' started at 2026-09-24 09:51:41.454
+Test Case 'ExpressionEvaluatorTests.testInvalidNumbers' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testLengthLimit' started at 2026-09-24 09:51:41.454
+Test Case 'ExpressionEvaluatorTests.testLengthLimit' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testMalformedInputNeverCrashes' started at 2026-09-24 09:51:41.454
+Test Case 'ExpressionEvaluatorTests.testMalformedInputNeverCrashes' passed (0.016 seconds)
+Test Case 'ExpressionEvaluatorTests.testMaximumSupportedNesting' started at 2026-09-24 09:51:41.471
+Test Case 'ExpressionEvaluatorTests.testMaximumSupportedNesting' passed (0.001 seconds)
+Test Case 'ExpressionEvaluatorTests.testMissingOperator' started at 2026-09-24 09:51:41.471
+Test Case 'ExpressionEvaluatorTests.testMissingOperator' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testNestingLimit' started at 2026-09-24 09:51:41.472
+Test Case 'ExpressionEvaluatorTests.testNestingLimit' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testOverflow' started at 2026-09-24 09:51:41.472
+Test Case 'ExpressionEvaluatorTests.testOverflow' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testParenthesesErrors' started at 2026-09-24 09:51:41.472
+Test Case 'ExpressionEvaluatorTests.testParenthesesErrors' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testPercentIsPostfixDivisionBy100' started at 2026-09-24 09:51:41.472
+Test Case 'ExpressionEvaluatorTests.testPercentIsPostfixDivisionBy100' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testPrecedenceAndLeftAssociativity' started at 2026-09-24 09:51:41.473
+Test Case 'ExpressionEvaluatorTests.testPrecedenceAndLeftAssociativity' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testTrailingOperator' started at 2026-09-24 09:51:41.473
+Test Case 'ExpressionEvaluatorTests.testTrailingOperator' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testUnarySigns' started at 2026-09-24 09:51:41.473
+Test Case 'ExpressionEvaluatorTests.testUnarySigns' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testWhitespace' started at 2026-09-24 09:51:41.473
+Test Case 'ExpressionEvaluatorTests.testWhitespace' passed (0.0 seconds)
+Test Case 'ExpressionEvaluatorTests.testZeroAndScientificFormattingCanBeEvaluatedAgain' started at 2026-09-24 09:51:41.474
+Test Case 'ExpressionEvaluatorTests.testZeroAndScientificFormattingCanBeEvaluatedAgain' passed (0.001 seconds)
+Test Suite 'ExpressionEvaluatorTests' passed at 2026-09-24 09:51:41.475
+Executed 21 tests, with 0 failures (0 unexpected) in 0.025 (0.025) seconds
+Test Suite 'debug.xctest' passed at 2026-09-24 09:51:41.475
+Executed 49 tests, with 0 failures (0 unexpected) in 0.138 (0.138) seconds
+Test Suite 'All tests' passed at 2026-09-24 09:51:41.475
+Executed 49 tests, with 0 failures (0 unexpected) in 0.138 (0.138) seconds
