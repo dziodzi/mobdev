@@ -1,37 +1,21 @@
-# Работа с лабораторными в репозитории mobdev
+# Advanced Calculator
 
+Flutter laboratory project: an advanced expression calculator with arithmetic
+precedence, parentheses, decimal numbers, percentage behaviour, sign toggle,
+calculation history, calculator memory, error handling, and responsive portrait /
+landscape layout.
 
-В репозитории должны находиться **6 лабораторных работ**. Каждая лабораторная - это **отдельное приложение в отдельной ветке**.
+## UI concept
 
-Каждая ветка lab-X содержит:
+The visual layer is inspired by early/mid-2000s smartphones and BlackBerry-era
+industrial UI: graphite/silver plastic, inset LCD-style display, compact beveled
+keys, cyan status accents, and dense information layout.
 
-src/main/java   — код лабораторной работы  
-src/test/java   — тесты для проверки задания (если требуются)
-### 1. Клонирование репозитория
+Design code is separated from calculator logic:
 
-git clone https://github.com/dziodzi/mobdev
-cd java-application-development
-
-### 2. Работа с лабораторной
-
-Каждая лабораторная выполняется в своей ветке.
-
-### 3. Создание рабочей ветки
-
-Работу необходимо выполнять в отдельной ветке, созданной от master.
-
-- Убедитесь, что вы находитесь на ветке master:
-
-`git checkout master`
-- Получите последние изменения:
-
-`git pull`
-- Создайте свою рабочую ветку:
-
-`git checkout -b lab-1`
-
-После этого все изменения выполняйте только в этой ветке.
-
-- Проверить текущую ветку можно командой:
-
-`git branch`
+- `lib/calculator_engine.dart` — expression parsing and calculation logic.
+- `lib/theme/retro_theme.dart` — 00s palette and global theme.
+- `lib/widgets/retro_calculator_button.dart` — tactile beveled calculator key.
+- `lib/widgets/retro_display.dart` — LCD-style display.
+- `lib/widgets/retro_header.dart` — compact retro title/status bar.
+- `lib/main.dart` — screen state and calculator behaviour.
