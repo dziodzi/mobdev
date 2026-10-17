@@ -1,32 +1,52 @@
-# Lab 1 - Advanced Calculator
+# Лабораторная работа №1 — Продвинутый калькулятор
 
-A simple Flutter calculator created for the first Mobile Development lab.
+Простое приложение-калькулятор, разработанное на Flutter в рамках первой
+лабораторной работы по дисциплине «Мобильная разработка».
 
-The project intentionally uses only standard Flutter classes and contains no
-third-party packages. The calculation code is separate from the interface so it
-can be tested independently.
+В проекте используются только стандартные возможности Flutter без сторонних
+пакетов. Логика вычисления отделена от интерфейса, поэтому её можно проверять
+независимо от UI.
 
-## Project structure
+## Структура проекта
 
-- `lib/main.dart` starts the application.
-- `lib/calculator_page.dart` contains the interface and button actions.
-- `lib/calculator_engine.dart` validates and calculates expressions.
-- `lib/history_entry.dart` stores one history item.
+- `lib/main.dart` — запуск приложения и настройка темы.
+- `lib/calculator_page.dart` — интерфейс и обработка нажатий кнопок.
+- `lib/calculator_engine.dart` — проверка и вычисление выражений.
+- `lib/history_entry.dart` — модель одного элемента истории.
+- `test/` — тесты логики и интерфейса.
 
-## Required features
+## Возможности
 
-- `+`, `-`, `×`, `÷`, decimal numbers, parentheses and operation priority
-- percent, sign change, clear and backspace
-- the last 10 calculations
-- `M+`, `M-`, `MR` and `MC`
-- state preservation and safe error messages
+- операции сложения, вычитания, умножения и деления;
+- правильный приоритет арифметических операций;
+- поддержка скобок и десятичных чисел;
+- вычисление процентов и изменение знака числа;
+- полная очистка и удаление последнего символа;
+- хранение последних 10 вычислений;
+- повторная загрузка выражения из истории;
+- память калькулятора: `M+`, `M-`, `MR`, `MC`;
+- сохранение состояния при изменении ориентации экрана;
+- обработка некорректного ввода без аварийного завершения приложения.
 
-## Run
+## Запуск
 
 ```sh
 flutter pub get
-flutter test
 flutter run
 ```
 
-For a quick web run, use `flutter run -d chrome`.
+Для запуска в браузере:
+
+```sh
+flutter run -d chrome
+```
+
+## Проверка
+
+```sh
+flutter analyze
+flutter test
+```
+
+Команда `flutter analyze` завершается без ошибок. Все 6 тестов успешно
+проходят.
