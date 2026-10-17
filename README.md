@@ -1,37 +1,32 @@
-# Работа с лабораторными в репозитории mobdev
+# Lab 1 - Advanced Calculator
 
+A simple Flutter calculator created for the first Mobile Development lab.
 
-В репозитории должны находиться **6 лабораторных работ**. Каждая лабораторная - это **отдельное приложение в отдельной ветке**.
+The project intentionally uses only standard Flutter classes and contains no
+third-party packages. The calculation code is separate from the interface so it
+can be tested independently.
 
-Каждая ветка lab-X содержит:
+## Project structure
 
-src/main/java   — код лабораторной работы  
-src/test/java   — тесты для проверки задания (если требуются)
-### 1. Клонирование репозитория
+- `lib/main.dart` starts the application.
+- `lib/calculator_page.dart` contains the interface and button actions.
+- `lib/calculator_engine.dart` validates and calculates expressions.
+- `lib/history_entry.dart` stores one history item.
 
-git clone https://github.com/dziodzi/mobdev
-cd java-application-development
+## Required features
 
-### 2. Работа с лабораторной
+- `+`, `-`, `×`, `÷`, decimal numbers, parentheses and operation priority
+- percent, sign change, clear and backspace
+- the last 10 calculations
+- `M+`, `M-`, `MR` and `MC`
+- state preservation and safe error messages
 
-Каждая лабораторная выполняется в своей ветке.
+## Run
 
-### 3. Создание рабочей ветки
+```sh
+flutter pub get
+flutter test
+flutter run
+```
 
-Работу необходимо выполнять в отдельной ветке, созданной от master.
-
-- Убедитесь, что вы находитесь на ветке master:
-
-`git checkout master`
-- Получите последние изменения:
-
-`git pull`
-- Создайте свою рабочую ветку:
-
-`git checkout -b lab-1`
-
-После этого все изменения выполняйте только в этой ветке.
-
-- Проверить текущую ветку можно командой:
-
-`git branch`
+For a quick web run, use `flutter run -d chrome`.
