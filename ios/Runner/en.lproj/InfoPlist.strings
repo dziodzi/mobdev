@@ -1,0 +1,2 @@
+NSContactsUsageDescription = "The app needs access to the address book to display and search device contacts.";
+CFBundleDisplayName = "Contacts";
